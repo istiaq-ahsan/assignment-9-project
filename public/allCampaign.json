@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Warm Hearts Campaign",
+        "image": "https://i.ibb.co.com/5sfz71j/Free-Vector-Flat-hand-drawn-clothing-donation-concept.jpg",
+        "description": "Providing winter essentials to vulnerable communities in Dhaka. Join us in bringing warmth this winter.",
+        "status": "Ongoing",
+        "contactInfo": "contact@warmhearts.com",
+        "division": "Dhaka"
+    },
+    {
+        "id": 2,
+        "title": "Chittagong Winter Relief",
+        "image": "https://i.ibb.co.com/kyhdf1m/Free-Vector-Flat-clothing-donation-concept.jpg",
+        "description": "Help us deliver warm clothing to the underserved communities in Chittagong. Every contribution counts!",
+        "status": "Completed",
+        "contactInfo": "support@chittagongrelief.org",
+        "division": "Chittagong"
+    },
+    {
+        "id": 3,
+        "title": "Sylhet Shelter Drive",
+        "image": "https://i.ibb.co.com/CQkBgcH/From-Closet-to-Kindness-Support-India-s-Cloth-Donation-Heroes-1.jpg",
+        "description": "Our team is working to distribute winter clothing to low-income families in Sylhet. Join us in making a difference.",
+        "status": "Ongoing",
+        "contactInfo": "sylhet.shelter@donatebd.org",
+        "division": "Sylhet"
+    },
+    {
+        "id": 4,
+        "title": "Rajshahi Warm Clothing Collection",
+        "image": "https://i.ibb.co.com/0ZTr7xw/Free-Vector-Flat-illustration-clothing-donation.jpg",
+        "description": "Providing essential winter clothing to the remote communities of Rajshahi. Together, we can make a change.",
+        "status": "Upcoming",
+        "contactInfo": "info@rajshahiwarmclothing.com",
+        "division": "Rajshahi"
+    },
+    {
+        "id": 5,
+        "title": "Khulna Winter Aid",
+        "image": "https://i.ibb.co.com/2PqTvF8/Free-Vector-Clothing-donation-illustration.jpg",
+        "description": "Aiding people in Khulna with winter clothing donations to ensure warmth during the coldest months.",
+        "status": "Ongoing",
+        "contactInfo": "khulna.aid@donationinitiative.org",
+        "division": "Khulna"
+    },
+    {
+        "id": 6,
+        "title": "Barisal Blanket Drive",
+        "image": "https://i.ibb.co.com/9vs2d1q/Free-Vector-Clothing-donation-concept-flat-hand-drawn.jpg",
+        "description": "Distributing blankets and warm clothing to the people in Barisal affected by extreme winter conditions.",
+        "status": "Completed",
+        "contactInfo": "barisal.blanket@reliefcampaign.com",
+        "division": "Barisal"
+    },
+    {
+        "id": 7,
+        "title": "Mymensingh Warmth Initiative",
+        "image": "https://i.ibb.co.com/wYVw9tY/PPE-Kit-Delivery-Business-Model-Know-The-Business-Opportunities.jpg",
+        "description": "A dedicated campaign to provide winter clothing to underprivileged families in Mymensingh.",
+        "status": "Upcoming",
+        "contactInfo": "info@mymensinghwarmth.org",
+        "division": "Mymensingh"
+    },
+    {
+        "id": 8,
+        "title": "Rangpur Cozy Campaign",
+        "image": "https://i.ibb.co.com/ZJsGGdd/Premium-Vector-Humanitarian-donation-help-and-dog-assisting.jpg",
+        "description": "Supporting Rangpur’s low-income residents with warm clothes during the harsh winter season.",
+        "status": "Ongoing",
+        "contactInfo": "contact@rangpurcozy.com",
+        "division": "Rangpur"
+    }
+]
