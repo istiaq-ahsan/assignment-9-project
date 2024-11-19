@@ -9,17 +9,13 @@ import Register from "../authentication/Register";
 import PrivateRouter from "./PrivateRouter";
 import Error from "../static/Error";
 import Dashboard from "../components/Dashboard";
+import WhyDonate from "../section/WhyDonate";
 
 const Router = createBrowserRouter([
     {
         path: "/",
         element: <HomeLayout></HomeLayout>,
-        children: [
-            {
-                path: "/",
-                element: <Banner></Banner>
-            }
-        ]
+
     },
     {
         path: "/campaign",

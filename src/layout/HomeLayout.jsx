@@ -1,6 +1,10 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../static/Footer";
 import Navbar from "../static/Navbar";
+import Banner from "../components/Banner";
+import WhyDonate from "../section/WhyDonate";
+import States from "../section/States";
+import HowItWorks from "../section/HowItWorks";
 
 const HomeLayout = () => {
     return (
@@ -9,7 +13,18 @@ const HomeLayout = () => {
                 <Navbar></Navbar>
             </header>
             <main>
-                <Outlet></Outlet>
+                <section>
+                    <Banner></Banner>
+                </section>
+                <section className="bg-base-200">
+                    <WhyDonate></WhyDonate>
+                </section>
+                <section className="bg-base-200">
+                    <States></States>
+                </section>
+                <section>
+                    <HowItWorks></HowItWorks>
+                </section>
             </main>
             <footer>
                 <Footer></Footer>
