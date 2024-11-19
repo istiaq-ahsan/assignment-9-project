@@ -10,6 +10,7 @@ import PrivateRouter from "./PrivateRouter";
 import Error from "../static/Error";
 import Dashboard from "../components/Dashboard";
 import WhyDonate from "../section/WhyDonate";
+import HowToHelp from "../components/HowToHelp";
 
 const Router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const Router = createBrowserRouter([
     {
         path: "/campaign",
         element: <Campaigns></Campaigns>,
+    },
+    {
+        path: "/howToHelp",
+        element: <HowToHelp></HowToHelp>,
     },
     {
         path: "/details/:id",

@@ -10,8 +10,12 @@ const Dashboard = () => {
         <div>
             <Navbar></Navbar>
             <main>
-                <div className="hero bg-gray-900 min-h-screen grid grid-cols-2">
-                    <div className="card bg-blue-100 hero-content flex-col border border-gray-500 w-96 col-span-1 p-10">
+                <div className="hero my-20 w-11/12 mx-auto gap-5 flex flex-col md:flex-row md:justify-around ">
+                    <div className="md:col-span-1 md:w-[50%]">
+                        <img src="https://i.ibb.co.com/L0GPzwq/Track-user-behavior-and-filter-users.gif" alt="" />
+                    </div>
+                    <div className="card bg-blue-100 hero-content 
+                    flex-col border border-blue-300 w-96 md:col-span-1 p-10">
                         <div className="avatar">
                             <div className="ring-primary ring-offset-base-100 w-40 rounded-full ring ring-offset-2">
                                 {user && user?.email ? (
@@ -42,9 +46,7 @@ const Dashboard = () => {
 
 
                     </div>
-                    <div className="col-span-1 ">
 
-                    </div>
                 </div>
             </main>
             <Footer></Footer>

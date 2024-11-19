@@ -2,10 +2,10 @@
 const States = () => {
     return (
         <div className="pb-20">
-            <div className="w-11/12 mx-auto bg-stone-400 rounded-2xl py-10">
-                <div className="stats shadow text-center flex justify-center mx-10">
+            <div className="w-11/12 mx-auto bg-stone-400 rounded-2xl py-5 md:py-10">
+                <div className="stats shadow text-center flex justify-center mx-5 md:mx-10 flex-wrap md:flex-nowrap">
                     {/* Total Winter Clothing Donated */}
-                    <div className="stat py-10">
+                    <div className="stat py-10 w-full md:w-1/3 mb-6 md:mb-0">
                         <div className="stat-figure text-primary">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const States = () => {
                     </div>
 
                     {/* People Helped */}
-                    <div className="stat">
+                    <div className="stat w-full md:w-1/3 mb-6 md:mb-0">
                         <div className="stat-figure text-secondary">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const States = () => {
                     </div>
 
                     {/* Clothing Recycled */}
-                    <div className="stat">
+                    <div className="stat w-full md:w-1/3 mb-6 md:mb-0">
                         <div className="stat-figure text-info">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

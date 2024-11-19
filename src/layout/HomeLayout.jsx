@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import WhyDonate from "../section/WhyDonate";
 import States from "../section/States";
 import HowItWorks from "../section/HowItWorks";
+import ClothesRequirement from "../section/ClothesRequirement";
 
 const HomeLayout = () => {
     return (
@@ -16,14 +17,17 @@ const HomeLayout = () => {
                 <section>
                     <Banner></Banner>
                 </section>
-                <section className="bg-base-200">
+                <section className="bg-cyan-100">
                     <WhyDonate></WhyDonate>
                 </section>
-                <section className="bg-base-200">
+                <section className="bg-cyan-100">
                     <States></States>
                 </section>
-                <section>
+                <section className="bg-cyan-100">
                     <HowItWorks></HowItWorks>
+                </section>
+                <section className="bg-cyan-100">
+                    <ClothesRequirement></ClothesRequirement>
                 </section>
             </main>
             <footer>

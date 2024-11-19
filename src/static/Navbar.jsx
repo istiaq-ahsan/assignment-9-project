@@ -10,11 +10,22 @@ const Navbar = () => {
 
     const menuItems = (
         <>
-            <NavLink to="/" className="">Home</NavLink>
-            <NavLink to="/campaign" className="">Donation Campaigns</NavLink>
-            <NavLink className="">How to Help</NavLink>
+            <NavLink to="/" className={({ isActive }) =>
+                isActive ? "text-blue-500 font-semibold" : "text-gray-700"
+            }>Home</NavLink>
+
+            <NavLink to="/campaign" className={({ isActive }) =>
+                isActive ? "text-blue-500 font-semibold" : "text-gray-700"
+            }>Donation Campaigns</NavLink>
+
+            <NavLink to="/howToHelp" className={({ isActive }) =>
+                isActive ? "text-blue-500 font-semibold" : "text-gray-700"
+            }>How to Help</NavLink>
+
             {
-                user && user?.email ? (<NavLink to="/dashboard" className="">Dashboard</NavLink>) : null
+                user && user?.email ? (<NavLink to="/dashboard" className={({ isActive }) =>
+                    isActive ? "text-blue-500 font-semibold" : "text-gray-700"
+                }>Dashboard</NavLink>) : null
             }
 
         </>
