@@ -59,17 +59,18 @@ const AuthProvider = ({ children }) => {
         userLogin,
         logout,
         updateUserData,
-        handleGoogleSignIn
+        handleGoogleSignIn,
+        loading
 
     }
 
     useEffect(() => {
-        const userOut = onAuthStateChanged(auth, (currentUser) => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
             setLoading(false);
         })
         return () => {
-            userOut();
+            unsubscribe();
         }
     }, [])
     return (

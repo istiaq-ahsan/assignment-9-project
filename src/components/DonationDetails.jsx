@@ -2,6 +2,8 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../static/Navbar";
 import Footer from "../static/Footer";
 import { useState } from "react";
+import { toast } from 'react-toastify';
+
 
 const DonationDetails = () => {
     const singleData = useLoaderData();
@@ -31,6 +33,7 @@ const DonationDetails = () => {
             pickupLocation: '',
             additionalNotes: ''
         });
+        toast.success("Thank you ! We will reach your destination soon");
     };
 
     return (

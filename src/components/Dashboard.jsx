@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Footer from "../static/Footer";
 import Navbar from "../static/Navbar";
 import { AuthContext } from "../provider/AuthProvider";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
@@ -33,7 +34,7 @@ const Dashboard = () => {
                                 <p className="py-6">Email : {user.email}</p>
                                 <p>UID : {user.uid}</p>
                                 <div className="my-5 text-center">
-                                    <button className="btn btn-outline">Update Profile</button>
+                                    <Link to="/updateProfile" className="btn btn-outline">Update Profile</Link>
                                 </div>
                             </div>
                         ) : (

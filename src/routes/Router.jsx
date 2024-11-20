@@ -11,6 +11,7 @@ import Error from "../static/Error";
 import Dashboard from "../components/Dashboard";
 import WhyDonate from "../section/WhyDonate";
 import HowToHelp from "../components/HowToHelp";
+import UpdateProfile from "../components/UpdateProfile";
 
 const Router = createBrowserRouter([
     {
@@ -44,8 +45,16 @@ const Router = createBrowserRouter([
     },
     {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>
+        element: <PrivateRouter>
+            <Dashboard></Dashboard>
+        </PrivateRouter>
 
+    },
+    {
+        path: "/updateProfile",
+        element: <PrivateRouter>
+            <UpdateProfile></UpdateProfile>
+        </PrivateRouter>
     },
     {
         path: "/auth",

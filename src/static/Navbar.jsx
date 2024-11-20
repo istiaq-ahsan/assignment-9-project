@@ -22,12 +22,9 @@ const Navbar = () => {
                 isActive ? "text-blue-500 font-semibold" : "text-gray-700"
             }>How to Help</NavLink>
 
-            {
-                user && user?.email ? (<NavLink to="/dashboard" className={({ isActive }) =>
-                    isActive ? "text-blue-500 font-semibold" : "text-gray-700"
-                }>Dashboard</NavLink>) : null
-            }
-
+            <NavLink to="/dashboard" className={({ isActive }) =>
+                isActive ? "text-blue-500 font-semibold" : "text-gray-700"
+            }>Dashboard</NavLink>
         </>
     )
 
