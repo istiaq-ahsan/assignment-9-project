@@ -18,7 +18,7 @@ const AuthProvider = ({ children }) => {
         setLoading(true);
         signInWithPopup(auth, provider)
             .then((result) => {
-                console.log(result.user);
+
                 setUser(result.user);
                 navigate("/")
 

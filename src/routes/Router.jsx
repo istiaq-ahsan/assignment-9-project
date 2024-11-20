@@ -35,9 +35,9 @@ const Router = createBrowserRouter([
         loader: async ({ params }) => {
             const res = await fetch("/allCampaign.json")
             const data = await res.json()
-            console.log(data, params.id);
+
             const singleData = data.find(d => d.id == params.id)
-            console.log(singleData);
+
             return singleData;
 
         }

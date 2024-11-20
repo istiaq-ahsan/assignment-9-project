@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 
 const DonationDetails = () => {
     const singleData = useLoaderData();
-    console.log(singleData);
+
     const { id, title, image, description, status, contactInfo, division } = singleData
 
     const [formData, setFormData] = useState({
@@ -41,22 +41,23 @@ const DonationDetails = () => {
             <header>
                 <Navbar></Navbar>
             </header>
+            <div className="pt-[100px] md:pt-[48px]"></div>
             <main>
-                <div>
-                    <div className="hero bg-base-200 min-h-screen py-5">
+                <div className="bg-base-200">
+                    <div className="hero py-20">
                         <div className="hero-content grid grid-cols-1 md:grid-cols-2 justify-center items-center">
                             <div className="text-center col-span-1 mx-auto">
                                 <div className="flex justify-center">
 
-                                    <img className="h-[300px] w-full p-5" src={image} alt="" />
+                                    <img className="h-[300px] w-full lg:px-20 p-5" src={image} alt="" />
                                 </div>
-                                <div className="flex justify-between mx-5">
+                                <div className="flex justify-between lg:mx-20 mx-5">
                                     <div className="badge badge-outline p-3">{status}</div>
                                     <div className="badge badge-outline p-3">{division}</div>
                                 </div>
                                 <div className="my-5">
                                     <h1 className="text-3xl font-bold">{title}</h1>
-                                    <p className="py-6">
+                                    <p className="py-6 lg:mx-20">
                                         {description}
                                     </p>
                                     <p className=" font-semibold text-red-500">

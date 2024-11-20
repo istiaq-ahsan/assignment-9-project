@@ -6,6 +6,8 @@ import WhyDonate from "../section/WhyDonate";
 import States from "../section/States";
 import HowItWorks from "../section/HowItWorks";
 import ClothesRequirement from "../section/ClothesRequirement";
+import OurMission from "../section/OurMission";
+import Faq from "../section/Faq";
 
 const HomeLayout = () => {
     return (
@@ -15,7 +17,11 @@ const HomeLayout = () => {
             </header>
             <main>
                 <section>
+                    <div className="pt-[100px] md:pt-[48px]"></div>
                     <Banner></Banner>
+                </section>
+                <section className="bg-cyan-100">
+                    <OurMission></OurMission>
                 </section>
                 <section className="bg-cyan-100">
                     <WhyDonate></WhyDonate>
@@ -28,6 +34,9 @@ const HomeLayout = () => {
                 </section>
                 <section className="bg-cyan-100">
                     <ClothesRequirement></ClothesRequirement>
+                </section>
+                <section>
+                    <Faq></Faq>
                 </section>
             </main>
             <footer>

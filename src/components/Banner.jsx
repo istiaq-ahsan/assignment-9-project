@@ -5,7 +5,7 @@ const Banner = () => {
         <div>
             <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto justify-center items-center my-10">
                 <div className="col-span-1 space-y-10 text-center">
-                    <h1 className="text-3xl md:text-5xl font-bold">Share the Warmth: <br /> Donate Winter Clothes,
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-800">Share the Warmth: <br /> Donate Winter Clothes,
                         <br />Spread Smiles
                     </h1>
 

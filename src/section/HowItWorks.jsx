@@ -4,8 +4,8 @@ const HowItWorks = () => {
     return (
         <div className="min-h-screen">
             <header className="text-center space-y-3">
-                <h1 className="text-5xl font-bold">How it Works</h1>
-                <p className="text-3xl">Donate Clothes Make Simple</p>
+                <h1 className="text-5xl font-bold text-gray-800">How it Works</h1>
+                <p className="text-3xl text-gray-600">Donate Clothes Make Simple</p>
             </header>
             <main>
                 <div className="flex justify-start items-start mt-20 mx-2 md:mx-10">
