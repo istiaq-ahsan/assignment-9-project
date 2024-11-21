@@ -4,11 +4,13 @@ import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import app from "../firebase/firebase.config";
 import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 const ResetPassword = () => {
 
     const auth = getAuth(app);
     const emailRef = useRef();
+
 
 
 
@@ -27,6 +29,7 @@ const ResetPassword = () => {
                         text: "We received your password reset request. Check your email for the reset link.",
                         icon: "success"
                     });
+                    window.location.href = 'https://mail.google.com';
                 })
         }
     }
