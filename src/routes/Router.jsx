@@ -12,6 +12,7 @@ import Dashboard from "../components/Dashboard";
 import WhyDonate from "../section/WhyDonate";
 import HowToHelp from "../components/HowToHelp";
 import UpdateProfile from "../components/UpdateProfile";
+import ResetPassword from "../authentication/ResetPassword";
 
 const Router = createBrowserRouter([
     {
@@ -67,6 +68,10 @@ const Router = createBrowserRouter([
             {
                 path: "/auth/register",
                 element: <Register></Register>,
+            },
+            {
+                path: "/auth/resetPassword",
+                element: <ResetPassword></ResetPassword>,
             }
         ]
     },

@@ -3,10 +3,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { toast } from 'react-toastify';
-import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-import app from "../firebase/firebase.config";
-import Swal from 'sweetalert2';
 
 
 const Login = () => {
@@ -14,11 +10,11 @@ const Login = () => {
     const { userLogin, setUser } = useContext(AuthContext);
     const [error, setError] = useState(null);
     const [showPassword, setShowPassword] = useState(false);
-    const auth = getAuth(app);
+
 
     const navigate = useNavigate();
     const location = useLocation();
-    const emailRef = useRef();
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -37,22 +33,7 @@ const Login = () => {
             })
     }
 
-    const handleForgetPassword = () => {
-        const email = emailRef.current.value;
-        if (!email) {
-            toast.error("Please provide a valid Email address")
-        }
-        else {
-            sendPasswordResetEmail(auth, email)
-                .then(() => {
-                    Swal.fire({
-                        title: "Good job!",
-                        text: "We received your password reset request. Check your email for the reset link.",
-                        icon: "success"
-                    });
-                })
-        }
-    }
+
 
     return (
         <div className="bg-base-200">
@@ -70,7 +51,7 @@ const Login = () => {
                                 <span className="label-text">Email</span>
                             </label>
                             <input
-                                name="email" ref={emailRef}
+                                name="email"
                                 type="email"
                                 placeholder="email"
                                 className="input input-bordered"
@@ -91,10 +72,10 @@ const Login = () => {
                             <button onClick={() => setShowPassword(!showPassword)} className="btn btn-xs absolute right-3 top-12">
                                 {showPassword ? <FaEyeSlash /> : <FaEye />}
                             </button>
-                            <label onClick={handleForgetPassword} className="label">
-                                <a href="#" className="label-text-alt link link-hover">
+                            <label className="label">
+                                <Link to="/auth/resetPassword" className="label-text-alt link link-hover">
                                     Forgot password?
-                                </a>
+                                </Link>
                             </label>
                         </div>
                         <div>
