@@ -17,6 +17,9 @@ WarmGive enables users to explore current winter clothing donation campaigns, le
 3. **User Dashboard and Profile Management**  
    After logging in, users can access a personalized dashboard to view and update their profile information. They can easily manage their account, update details, and track their activities.
 
+4. **Forgot Password Feature**  
+   If a user forgets their password, they can easily reset it by clicking on the "Forgot Password" . A password reset email will be sent to their registered Gmail account, allowing them to securely create a new password and regain access to their account.
+
 ## 📚 Technologies Used
 
 - **HTML**
