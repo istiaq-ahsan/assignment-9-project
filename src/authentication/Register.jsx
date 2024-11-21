@@ -2,12 +2,14 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { Helmet } from "react-helmet-async";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 
 const Register = () => {
 
     const { createNewUser, setUser, updateUserData, handleGoogleSignIn } = useContext(AuthContext);
     const [error, setError] = useState(null);
+    const [showPassword, setShowPassword] = useState(false);
 
     const navigate = useNavigate();
 
@@ -50,7 +52,7 @@ const Register = () => {
                 <title>Register</title>
             </Helmet>
             <div className="min-h-screen flex justify-center items-center px-5 py-20">
-                <div className="card bg-base-100 w-full max-w-lg shrink-0  p-10 my-10 rounded-2xl">
+                <div className="card bg-base-100 w-full max-w-lg shrink-0 p-5 md:p-10 my-10 rounded-2xl">
                     <h2 className="text-2xl font-semibold text-center">
                         Register your account
                     </h2>
@@ -94,17 +96,20 @@ const Register = () => {
                             />
                         </div>
 
-                        <div className="form-control">
+                        <div className="form-control relative">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
                             <input
                                 name="password"
-                                type="password"
+                                type={showPassword ? 'text' : 'password'}
                                 placeholder="password"
                                 className="input input-bordered"
                                 required
                             />
+                            <button onClick={() => setShowPassword(!showPassword)} className="btn btn-xs absolute right-3 top-12">
+                                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                            </button>
 
                         </div>
                         <div>
