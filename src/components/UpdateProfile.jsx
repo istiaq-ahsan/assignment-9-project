@@ -3,6 +3,7 @@ import Navbar from '../static/Navbar';
 import Footer from '../static/Footer';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const UpdateProfile = () => {
 
@@ -30,6 +31,9 @@ const UpdateProfile = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Profile Update</title>
+            </Helmet>
             <header>
                 <Navbar></Navbar>
             </header>

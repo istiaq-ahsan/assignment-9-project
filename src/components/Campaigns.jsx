@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../static/Navbar';
 import Footer from '../static/Footer';
 import Campaign from './Campaign';
+import { Helmet } from 'react-helmet-async';
 
 const Campaigns = () => {
 
@@ -17,6 +18,9 @@ const Campaigns = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>All Campaign</title>
+            </Helmet>
             <header>
                 <Navbar></Navbar>
             </header>

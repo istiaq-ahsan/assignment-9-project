@@ -6,8 +6,8 @@ const WhyDonate = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
             <div className="text-center">
-                <h1 className="text-5xl font-bold text-gray-800">Why Donate Clothes ?</h1>
-                <h2 className="text-3xl mt-2 text-gray-600">Declutter your wardrobe. But leave your heart full.</h2>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Why Donate Clothes ?</h1>
+                <h2 className="text-lg md:text-3xl mt-2 text-gray-600">Declutter your wardrobe. But leave your heart full.</h2>
             </div>
             <div className=" flex flex-col md:flex-row mt-16 gap-10 justify-center items-center">
                 <div className="md:w-[40%]">

@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ImCheckmark } from "react-icons/im";
 import { FaXmark } from "react-icons/fa6";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 
 const ClothesRequirement = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // duration of the animation
+            once: false,
+            offset: 200,     // whether animation should happen only once
+            easing: 'ease-in-out', // easing effect
+        });
+    })
+
     return (
-        <div className='py-20'>
+        <div data-aos="zoom-in-up"
+            className='py-20'>
 
             <div className=' bg-blue-200 p-5 md:p-10 rounded-2xl w-11/12 md:w-3/4 mx-auto'>
                 <div>

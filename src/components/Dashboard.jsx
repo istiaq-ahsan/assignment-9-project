@@ -3,12 +3,16 @@ import Footer from "../static/Footer";
 import Navbar from "../static/Navbar";
 import { AuthContext } from "../provider/AuthProvider";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
 
     return (
         <div>
+            <Helmet>
+                <title>Dashboard</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="pt-[100px] md:pt-[48px]"></div>
             <main>

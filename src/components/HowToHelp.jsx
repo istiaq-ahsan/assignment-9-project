@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import Footer from "../static/Footer";
 import Navbar from "../static/Navbar";
 
 const HowToHelp = () => {
     return (
         <div>
+            <Helmet>
+                <title>How to help</title>
+            </Helmet>
             <header>
                 <Navbar></Navbar>
             </header>

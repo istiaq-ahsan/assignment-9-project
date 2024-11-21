@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -45,6 +46,9 @@ const Register = () => {
     return (
 
         <div className="bg-base-200">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <div className="min-h-screen flex justify-center items-center px-5 py-20">
                 <div className="card bg-base-100 w-full max-w-lg shrink-0  p-10 my-10 rounded-2xl">
                     <h2 className="text-2xl font-semibold text-center">

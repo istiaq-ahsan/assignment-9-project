@@ -1,10 +1,24 @@
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import { useEffect } from "react";
 
 
 const OurMission = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // duration of the animation
+            once: false,
+            offset: 200,     // whether animation should happen only once
+            easing: 'ease-in-out', // easing effect
+        });
+    })
+
     return (
-        <div className="pt-20">
+        <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" className="pt-20">
             <div className="flex flex-col-reverse lg:flex-row w-11/12 md:w-3/4 mx-auto
              justify-center items-center bg-blue-100 p-5 md:p-10 gap-5 rounded-xl">
                 <div className="w-full lg:w-[50%]">
@@ -52,10 +66,10 @@ const OurMission = () => {
                             <img className="" src="https://i.ibb.co.com/PGDChQj/clothes-Donate2.jpg" alt="" />
                         </div>
                         <div className="flex gap-5 items-center">
-                            <img className="w-[180px] h-[130px] md:w-[250px] md:h-[150px]"
+                            <img className="w-[150px] h-[120px] md:w-[250px] md:h-[150px]"
                                 src="https://i.ibb.co.com/hsmF24X/clothes-Donate3.jpg" alt="" />
 
-                            <img className="w-[130px] h-[130px] md:w-[150px] md:h-[150px] rounded-full"
+                            <img className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-full"
                                 src="https://i.ibb.co.com/M53pj2D/doante-blankets-7.jpg" alt="" />
 
                         </div>

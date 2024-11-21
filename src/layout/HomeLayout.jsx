@@ -8,10 +8,14 @@ import HowItWorks from "../section/HowItWorks";
 import ClothesRequirement from "../section/ClothesRequirement";
 import OurMission from "../section/OurMission";
 import Faq from "../section/Faq";
+import { Helmet } from "react-helmet-async";
 
 const HomeLayout = () => {
     return (
         <div>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <header>
                 <Navbar></Navbar>
             </header>

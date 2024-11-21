@@ -3,6 +3,7 @@ import Navbar from "../static/Navbar";
 import Footer from "../static/Footer";
 import { useState } from "react";
 import { toast } from 'react-toastify';
+import { Helmet } from "react-helmet-async";
 
 
 const DonationDetails = () => {
@@ -38,6 +39,9 @@ const DonationDetails = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>{title}</title>
+            </Helmet>
             <header>
                 <Navbar></Navbar>
             </header>
