@@ -10,12 +10,10 @@ const ResetPassword = () => {
     const auth = getAuth(app);
     const emailRef = useRef();
 
-    const haandleSubmit = (e) => {
+
+
+    const handleForgetPassword = (e) => {
         e.preventDefault();
-    }
-
-    const handleForgetPassword = () => {
-
         const email = emailRef.current.value;
         console.log(emailRef);
         if (!email) {
@@ -43,7 +41,7 @@ const ResetPassword = () => {
                     <h2 className="text-2xl font-semibold text-center">
                         Reset Your Password
                     </h2>
-                    <form onSubmit={haandleSubmit} className="card-body">
+                    <form className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>

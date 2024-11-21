@@ -30,4 +30,4 @@ WarmGive enables users to explore current winter clothing donation campaigns, le
 
 ## 🖥️ Live Link to the Deployed Project
 
-[WarmGive Live Site](https://assignment-9-project-240b2.web.app/)
+[WarmGive Live Site](https://assignment-9-project.netlify.app/)
